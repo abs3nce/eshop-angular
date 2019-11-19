@@ -1,0 +1,2 @@
+# eshop-angular
+REPO S ANGULAR PROJEKTOM ZO SKOLY
