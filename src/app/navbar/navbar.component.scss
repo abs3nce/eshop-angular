@@ -1,56 +1,75 @@
 * {
-  color: #020202;
+  color: #fff;
   font-weight: bolder;
   font-size: 12px;
+  overflow-x: hidden;
 }
 
-header {
-  position: sticky;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  padding: 30px 2% 30px 2%;
+.banner {
+  background-image: url("/assets/images/main-banner.png");
+  background-position: 67% center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 
-  .nav-menu {
+  header {
+    position: sticky;
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     align-items: center;
-    .menu-icon {
-      cursor: pointer;
+    align-content: center;
+    padding: 30px 2% 30px 2%;
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      .menu-icon {
+        cursor: pointer;
+      }
+      span {
+        padding-left: 10%;
+      }
     }
-    span {
-      padding-left: 10%;
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      align-items: center;
+
+      li {
+        display: inline-block;
+        padding: 0px 40px;
+
+        a {
+          transition: all 0.3s ease 0s;
+          text-decoration: none;
+        }
+        a:hover {
+          color: #ff0000;
+        }
+      }
     }
-  }
 
-  .nav-links {
-    list-style: none;
-    display: flex;
-    align-items: center;
+    .nav-info {
+      display: flex;
+      padding: 0px 20px;
 
-    li {
-      display: inline-block;
-      padding: 0px 40px;
-
+      align-items: center;
+      vertical-align: middle;
       a {
-        transition: all 0.3s ease 0s;
-        text-decoration: none;
+        padding: 0 20% 0 20%;
       }
-      a:hover {
-        color: #ff0000;
+      .info {
+        .fa-info-circle {
+          font-size: 20px;
+        }
       }
-    }
-  }
 
-  .nav-info {
-    display: flex;
-    padding: 0px 20px;
-    a {
-      padding-right: 30%;
-      .fa-info-circle {
-        font-size: 20px;
+      .lang {
+        text-decoration: none;
+        color: white;
       }
     }
   }
