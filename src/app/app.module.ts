@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
+import { VideoHomeboxComponent } from './video-homebox/video-homebox.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     NavbarComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    VideoHomeboxComponent
   ],
   imports: [
     BrowserModule,
